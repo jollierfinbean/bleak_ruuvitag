@@ -5,7 +5,6 @@ from typing import NamedTuple
 from bleak_ruuvitag.core import scan
 from aioinflux import (
     InfluxDBClient,
-    TIMESTR,
     TAGENUM,
     TAG,
     FLOAT,
@@ -25,7 +24,6 @@ influxdb_client_configuration = {
 @lineprotocol
 class RuuviTagMeasurementTest1(NamedTuple):
     name: TAG
-    timestamp: TIMESTR
     temperature: FLOAT
     humidity: FLOAT
     pressure: INT
@@ -37,7 +35,6 @@ async def main():
     async for result in scan(5):
         measurement = RuuviTagMeasurementTest1(
             name=result.name,
-            timestamp=str(result.timestamp),
             temperature=result.temperature,
             humidity=result.humidity,
             pressure=result.pressure,
