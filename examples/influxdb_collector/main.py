@@ -1,5 +1,6 @@
 import asyncio
 import datetime
+from typing import NamedTuple
 
 from bleak_ruuvi import scan
 from aioinflux import (
@@ -12,7 +13,6 @@ from aioinflux import (
     STR,
     lineprotocol
 )
-from typing import NamedTuple
 
 influxdb_client_configuration = {
     'host': 'influxdb.lan',
