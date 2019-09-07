@@ -1,3 +1,9 @@
+## Supported protocols
+See https://github.com/ruuvi/ruuvi-sensor-protocols
+- [ ] data format 2 (https://github.com/ruuvi/ruuvi-sensor-protocols#data-format-2-and-4-protocol-specification)
+- [x] data format 3 (https://github.com/ruuvi/ruuvi-sensor-protocols#data-format-3-protocol-specification-rawv1)
+- [ ] data format 4 (https://github.com/ruuvi/ruuvi-sensor-protocols#data-format-2-and-4-protocol-specification)
+- [ ] data format 5 (https://github.com/ruuvi/ruuvi-sensor-protocols#data-format-5-protocol-specification-rawv2)
 ## Examples
 
 ```python
