@@ -1,4 +1,4 @@
-from bleak_ruuvi.utils import twos_complement
+from bleak_ruuvitag.utils import twos_complement
 
 class RuuviMeasurementV3():
     version = 'RAWv1'

@@ -1,7 +1,7 @@
 from bleak import discover
 
-from bleak_ruuvi.decoders import RuuviMeasurementV3
-from bleak_ruuvi.consts import MANUFACTURER_ID_RUUVI
+from bleak_ruuvitag.decoders import RuuviMeasurementV3
+from bleak_ruuvitag.consts import MANUFACTURER_ID_RUUVI
 
 data_formats = {
     MANUFACTURER_ID_RUUVI: {

@@ -2,7 +2,7 @@ import asyncio
 import datetime
 from typing import NamedTuple
 
-from bleak_ruuvi import scan
+from bleak_ruuvitag import scan
 from aioinflux import (
     InfluxDBClient,
     TIMESTR,
