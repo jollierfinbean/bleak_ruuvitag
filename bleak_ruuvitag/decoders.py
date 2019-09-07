@@ -8,8 +8,9 @@ class RuuviMeasurementV3():
     acceleration_unit = 'mG'
     voltage_unit = 'mV'
 
-    def __init__(self, mac_address, rssi, humidity, temperature, temperature_fraction, pressure1, pressure2,
+    def __init__(self, name, mac_address, rssi, humidity, temperature, temperature_fraction, pressure1, pressure2,
                  acc_x1, acc_x2,  acc_y1, acc_y2, acc_z1, acc_z2, voltage1, voltage2, *args):
+        self.name = name
         self.mac_address = mac_address
         self.rssi = rssi
         self._humidity = humidity
