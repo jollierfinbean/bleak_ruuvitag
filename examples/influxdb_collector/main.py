@@ -15,11 +15,11 @@ from aioinflux import (
 from typing import NamedTuple
 
 influxdb_client_configuration = {
-    'host': 'influxdb.varasto.lan',
+    'host': 'influxdb.lan',
     'port': 80,
     'db': 'mydb',
-    'username': 'admin',
-    'password': 'MxnCprrlg5'
+    'username': 'myuser',
+    'password': 'mypassword'
 }
 
 @lineprotocol
