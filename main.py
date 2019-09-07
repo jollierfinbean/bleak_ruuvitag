@@ -1,5 +1,5 @@
 import asyncio
-from bleak_ruuvitag import scan
+from bleak_ruuvitag.core import scan
 
 async def main():
    async for measurement in scan():
