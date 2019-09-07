@@ -5,6 +5,6 @@ sudo: true
 install:
   - pip install -r requirements.txt
   - pip install -r requirements-test.txt
-  - apt-get install bluez
+  - sudo apt-get install bluez
 script:
   - pytest
